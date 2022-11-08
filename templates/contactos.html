@@ -1,0 +1,151 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<html lang="es">
+<head>
+     
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+   
+    <a href="https://www.youtube.com/channel/UCeSU7WIreZY_BNZ27LbHu-A"><i class="fa fa-youtube" id="youtube"></i></a>
+    <a href="https://www.twitch.tv/srnanii"><i class="fa fa-twitch" id="twitch"></i></a>
+      <a href="https://www.instagram.com/jeancarlos_pdp/"><i class="fa fa-instagram" id="instagram"></i></a>
+  </div>
+  <style>
+    * {
+margin: 0;
+padding: 0;
+}
+body {
+height: 100vh;
+width: 100vw;
+
+}
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 10vh;
+width: 10vw;
+}
+
+#youtube,
+#twitch,
+#formulario,
+#instagram {
+font-size: 60px;
+background-color: #18191f;
+color: #fff;
+box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
+2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
+inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
+inset 2px 2px 10px #00000080;
+border-radius: 29px;
+padding: 11px 19px;
+margin: 0 40px;
+animation: animate 3s linear infinite;
+text-shadow: 0 0 100px #ff16e4, 0 0 100px #ff3b3b, 0 0 150px #c422ff,
+0 0 200px #f953ff;
+}
+#youtube{
+animation-delay: 0.3s;
+}
+#instagram {
+animation-delay: 0.7s;
+}
+#twitch{
+animation-delay: 0.1s;
+}
+
+@keyframes animate {
+from {
+filter: hue-rotate(0deg);
+}
+to {
+filter: hue-rotate(360deg);
+}
+}
+</style>
+<center><i class="fa -formulario" id="formulario">   
+  <meta charset="UTF-8">
+  <title>Formulario de contacto</title>
+
+
+  <link rel="stylesheet" type="text/css" href="static/css/contacto.css">
+  </head>
+
+
+<body>  
+  
+ 
+
+  <div class="contact_form">
+
+    <div class="formulario">      
+      <h1>🎮CONTACTANOS🎮</h1>
+        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+
+          <form action="/agrega_contactos" method="post">       
+
+            
+                <p>
+                  <label for="usuario" class="colocar_nombre">usuario
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu usuario">
+                </p>
+              
+                <p>
+                  <label for="correo" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="correo" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+            
+                <p>
+                  <label for="telefono" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="telefono" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>    
+              
+               
+              
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="asunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+              
+                <p>
+                  <label for="Comentarios" class="colocar_mensaje">Comentarios
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                    
+              
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                <p class="aviso">
+                  <span class="obligatorio"> * </span>los campos son obligatorios.
+                </p>          
+            
+          </form></center>
+    </div>  
+  </div>
+
+</body>
+</html>
+
+{%endblock%}
+</body>
+</html>

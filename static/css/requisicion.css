@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+body{
+	background: #c4007c;
+}
+
+
+
+.navegacion{
+	width: 1000px;
+	margin: 30px auto;
+	box-shadow: rgba(46, 240, 240, 0.4) 0px 5px, rgba(46, 201, 240, 0.3) 0px 10px, rgba(46, 233, 240, 0.2) 0px 15px, rgba(46, 240, 230, 0.1) 0px 20px, rgba(46, 240, 240, 0.05) 0px 25px;
+    background: #00bbc8 ;
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #353535;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #22ffe2;
+	transition: all .3s;
+    
+    box-shadow: rgba(46, 240, 227, 0.4) 0px 5px, rgba(46, 240, 233, 0.3) 0px 10px, rgba(46, 240, 221, 0.2) 0px 15px, rgba(46, 240, 221, 0.1) 0px 20px, rgba(46, 240, 188, 0.05) 0px 25px;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+    box-shadow: rgba(46, 240, 221, 0.4) 5px 5px, rgba(46, 240, 182, 0.3) 10px 10px, rgba(46, 240, 208, 0.2) 15px 15px, rgba(46, 240, 201, 0.1) 20px 20px, rgba(46, 240, 214, 0.05) 25px 25px;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+    box-shadow: rgba(46, 240, 214, 0.4) 5px 5px, rgba(46, 240, 221, 0.3) 10px 10px, rgba(46, 240, 175, 0.2) 15px 15px, rgba(46, 240, 227, 0.1) 20px 20px, rgba(46, 240, 214, 0.05) 25px 25px;
+    
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+    
+}
+body {
+
+
+    background-image:  url(https://i0.wp.com/www.banwoh.com/wp-content/uploads/2022/09/Kiriko-en-Overwatch-2.jpg?fit=1920%2C1080&ssl=1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #000000;
+  }
+
+.main, footer{
+    width: 90%;
+    margin: 1% auto;
+   
+    
+
+}
+body {
+  font-family:Helvetica,Futura,Arial,Helvetica,sans-serif;
+
+}
+header nav ul {
+    list-style: none;
+}
+header nav ul li{
+    background: hsl(182, 100%, 39%) ;
+    padding: 10px 20px;
+    display:block;
+    color:#00bbc8(24, 173, 173) ;
+    text-decoration: none;
+}
+header nav ul li a{
+background: #00bbc8 ;
+    padding: 10px 20px;
+    display:block;
+    color:#00bbc8(24, 173, 160) ;
+    text-decoration: none;
+
+}
+header nav ul li a:hover{
+    background: #00bbc8 ;
+}
+.main .articles{
+    width:100%;
+    margin-right: 1.5%;
+    float:left;
+}
+.main .articles article{
+    padding: 20px;
+    background:#FFFFFF ;
+    margin-bottom: 20px;
+    box-shadow: rgba(255, 255, 255, 0.4) 5px 5px, rgba(255, 255, 255, 0.3) 10px 10px, rgba(255, 255, 255, 0.2) 15px 15px, rgba(255, 255, 255, 0.1) 20px 20px, rgba(255, 255, 255, 0.05) 25px 25px;
+}
+aside{
+    width: 30%;
+    background: #0d9683;
+    float: left;
+    padding: 20px;
+    box-sizing:border-box;
+    box-shadow: rgba(46, 201, 240, 0.4) 5px 5px, rgba(46, 217, 240, 0.3) 10px 10px, rgba(46, 217, 240, 0.2) 15px 15px, rgba(46, 233, 240, 0.1) 20px 20px, rgba(46, 240, 198, 0.05) 25px 25px;
+}
+footer{
+    background: #12b7d4;
+    color: #fff;
+    clear: both;
+    padding: 10px 0px;
+    text-align: center;
+    box-shadow: rgba(46, 195, 240, 0.4) 5px 5px, rgba(46, 195, 240, 0.3) 10px 10px, rgba(46, 240, 214, 0.2) 15px 15px, rgba(46, 240, 230, 0.1) 20px 20px, rgba(46, 240, 230, 0.05) 25px 25px;
+}
+
+.main article{
+    background: #B1B2AB ;
+}

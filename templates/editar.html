@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="/static/css/Editar.css">
+ <form action="/editar_comenta/{{comentar.0}}"method="post">
+    <div class="container">
+          <div class="form-row">
+               <div class="col-xs-12 ">
+                <div class="mb-3">
+                  
+                </div>
+                <div class="mb-3">
+                  <center><img src="https://www.gran-turismo.com/gtsport/decal/5836670627584443416_1.png" alt="" width="300" height="200" /></center>
+                  <center><H1><p style="color:#ff00bf;"><label for="usuario" class="form-label">🎮¿QUE QUIERES EDITAR?🎮</label></p></H1></center>
+                  <center> <div class="col-md-4">
+                        <label for="id" class="form-label">usuario</label>    
+                        <input type="text" name="introducir_nombre" id="nombre" value="{{comentar.1}}"></input>
+                  </div>
+                  <div class="col-md-4">
+                        <label for="id" class="form-label">correo</label>    
+                        <input type="text" name="introducir_email" id="email"  value="{{comentar.2}}"></input>
+                  </div>
+                      <div class="col-md-8">
+                        <label for="id" class="form-label">comentario</label>    
+                        <input type="text" name="introducir_mensaje" class="texto_mensaje" id="mensaje"   value="{{comentar.3}}"></input>
+                  </div>
+                      <div class="col-md-4">
+                        <label for="id" class="form-label">telefono</label>    
+                        <input type="telefono" name="introducir_telefono" id="telefono"  value="{{comentar.4}}"></input>
+                  </div>
+                      <div class="col-md-5">
+                        <label for="id" class="form-label">asunto</label>    
+                        <input type="text" name="introducir_asunto" id="asunto"  value="{{comentar.5}}"></input>
+                      </center>
+                </div>
+
+                </div>
+          </div>
+    </div>
+          <center><button type="submit" class="btn btn-primary">Actualizar</button></center>
+          
+</form>
+
+{%endblock%}
+</html>
